@@ -1,0 +1,87 @@
+html {
+  background: white;
+}
+
+.container {
+  width: 100%;
+  height: 180px;
+  margin: 0 auto;
+  background: #9500ff;
+}
+.logo {
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 30px;
+  list-style: none;
+  }
+
+.nav {
+  padding-top: 25px;
+  list-style: none;
+  float: right;
+  }
+
+  .nav > li {
+    display: inline-block;
+  }
+
+.nav.center {
+  text-align: center;
+}
+
+.social {
+  padding-left: 30px;
+  padding-top: 130px;
+  list-style: none;
+  }
+
+
+
+.primary a {
+  display: block;
+  margin-right: 20px;
+  padding: 1em;
+  color: #fff;
+  background: none;
+}
+
+.primary > li + li {
+  margin-right: 10px;
+}
+
+@media (max-width: 760px) {
+
+  .primary > li {
+    display: block;
+  }
+
+  .primary > li + li {
+    margin-top: 10px;
+    margin-left:  0;
+  }
+}
+
+#postbox1 {
+  width: 830px;
+  height: 402px;
+  border: 3px solid #00ffff;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;}
+
+#postbox1 .pbox01 {
+  font-size: 14px;
+  width: 370px;
+  height: 130px; solid;
+  float: right;
+  margin-top: 250px;
+  margin-right: 15px;
+  position: relative;}
+
+  #postbox2 {
+    width: 400px;
+    height: 402px;
+    border: 3px solid #00ffff;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;}
