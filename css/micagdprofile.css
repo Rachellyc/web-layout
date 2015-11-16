@@ -33,9 +33,26 @@ video {
   top: 0;
   left: 0;
   z-index: 9999;
+  box-shadow: .5px .5px 3px #383838;
 }
+
+
+
+@media (max-width: 760px) {
+  .container {
+    height: 280px;
+    width: 100%;
+    padding: 0px;
+    float: left;
+
+  }
+}
+
+
+
 .logo {
   position: absolute;
+  width: 350px;
   padding-left: 30px;
   padding-top: 30px;
   list-style: none;
@@ -49,8 +66,55 @@ video {
   margin-left: 10px;
   }
 
+@media (max-width: 760px) {
+  .nav {
+    display: inline-block;
+    height:270px;
+    padding: -30px;
+    float: left;
+    margin-left: 25px;
+
+  }
+}
+
+.nav a:hover {
+color:#00ffff;
+}
 
 
+
+@media (max-width: 760px) {
+  .primary {
+    display: inline-block;
+    height: 100px;
+    margin-top: 55px;
+    margin-left: 30px;
+    padding: 0px;
+    float: left;
+
+  }
+}
+
+
+
+
+.nav ul {
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 760px){
+  .nav ul li {
+    display: none;
+  }
+}
+
+
+
+  .nav {
+    position: relative;
+    padding-top: 40px;
+    margin-left: 10px;
+    }
 
   .nav > li {
     display: inline-block;
@@ -58,16 +122,30 @@ video {
   }
 
 
+
 .social {
-  padding-left: 30px;
+  width: 200px;
+  padding-left: 25px;
   padding-top: 130px;
   list-style: none;
   }
 
+  @media (max-width: 760px) {
+    .social {
+      position: fixed;
+      width: 180px;
+      float: right;
+      margin-top: 95px;
+      margin-left: 183px;
+      padding-left: 25px;
+      padding-top: 0px;
+      list-style: none;
+
+    }
+  }
 
 
 .primary a {
-  display: block;
   margin-right: 20px;
   padding: 1em;
   color: #fff;
@@ -92,58 +170,84 @@ video {
 }
 
 
-
 .profile-frame1 {
   position: relative;
   margin-top: 250px;
   vertical-align: top;
+  width: 1030px;
+  height: 430px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* 768px and larger */
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   .profile-frame1 {
-    width: 1030px;
-    height: 430px;
+    margin-top: 300px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+    display: inline-block;
   }
 }
+
+@media (max-width: 400px) {
+    .profile-frame1 {
+      width: 400px;
+    }
+  }
 
 
 .profile-frame2 {
   position: relative;
   margin-top: 25px;
   vertical-align: top;
+  width: 1030px;
+  height: 430px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
-/* 768px and larger */
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   .profile-frame2 {
-    width: 1030px;
-    height: 430px;
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+    display: inline-block;
   }
 }
+
+@media (max-width: 400px) {
+    .profile-frame2 {
+      width: 400px;
+    }
+  }
 
 
 .profile-post1 {
   position: absolute;
   float: left;
+  width: 335px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
   vertical-align: top;
   background-color: #00ffff;
 
 }
-@media (min-width: 760px) {
+
+@media (max-width: 760px) {
   .profile-post1  {
-    width: 335px;
+    width: 100%;
     height: 400px;
+    margin-top: 0px;
     margin-right: auto;
     margin-left: auto;
+    display: inline-block;
   }
 }
-
-
 
 .profile-person1 {
   position: relative;
@@ -183,21 +287,38 @@ video {
 }
 
 
+
+@media (max-width: 760px) {
+  .info-content {
+    margin-bottom: 40px;
+  }
+}
+
+
+
 .profile-post2 {
+  position: relative;
   margin-top: 0px;
-  vertical-align: top;
   background-color: #9500ff;
+  width: 335px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+
 
 }
-@media (min-width: 760px) {
+
+
+@media (max-width: 760px) {
   .profile-post2  {
-    width: 335px;
+    width: 100%;
     height: 400px;
-    margin-top: 0px;
+    margin-top: 440px;
     margin-right: auto;
     margin-left: auto;
   }
 }
+
 
 .profile-person2 {
   position: relative;
@@ -256,6 +377,15 @@ video {
 }
 
 
+@media (max-width: 760px) {
+  .profile-post3  {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 
 
@@ -275,14 +405,14 @@ video {
   }
 }
 
-
-
-.profile-person1 {
-  position: relative;
-  width: 40%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 760px) {
+  .profile-post4  {
+    width: 100%;
+    height: 400px;
+    margin-top: 820px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 
@@ -377,6 +507,17 @@ video {
   }
 }
 
+@media (max-width: 760px) {
+  .profile-post5  {
+    width: 100%;
+    height: 400px;
+    margin-top: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
 .profile-person2 {
   position: relative;
   width: 40%;
@@ -434,7 +575,15 @@ video {
 }
 
 
-
+@media (max-width: 760px) {
+  .profile-post6  {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 
 

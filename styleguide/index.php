@@ -14,7 +14,7 @@
     width: 65%;
     float: left;
 }
-.pattern .source {
+.pattern .source {s
     width: 30%;
     float: right;
 }
